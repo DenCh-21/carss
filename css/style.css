@@ -1,0 +1,277 @@
+@charset "UTF-8";
+/* 
+&display=swap
+&subset=cyrillic-ext 
+*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap");
+
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+img {
+  vertical-align: top;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Roboto";
+}
+
+html {
+  font-size: 16px;
+  /* по умолчанию */
+}
+
+body {
+  line-height: 1;
+  font-family: "Roboto";
+  padding: 30px;
+  background: url("../img/01.jpg") no-repeat;
+}
+
+.wrapper {
+  /* min-height: 100%;
+  overflow: hidden; */
+}
+
+.cars {
+  position: relative;
+  top: 360px;
+  left: 300px;
+  transform: scale(1.2);
+  
+}
+.cars__roof {
+  background-color: rgb(72, 111, 72);
+  width: 100px;
+  height: 100px;
+  position: relative;
+  left: 97px;
+  top: 26px;
+  border-radius: 32% 68% 0% 100% / 100% 0% 100% 0%;
+  border: 1px solid #000;
+  /* border-bottom: none; */
+}
+.cars__window {
+  background: url("../img/555.jpg") 0 0 / 80px 80px no-repeat;
+  width: 70px;
+  height: 70px;
+  position: relative;
+  left: 13px;
+  top: 20px;
+  border-radius: 32% 68% 0% 100% / 100% 0% 100% 0%;
+  border: 1px solid #000;
+
+}
+
+.cars__smoke {
+  width: 20px;
+  height: 100px;
+  background-color: rgb(72, 66, 66);
+  position:absolute;
+  margin: -74px 0px 0px 195px;
+  border: 1px solid #000;
+
+}
+.cars__smoke::before {
+  content:"";
+  display: inline-block;
+  background-color: rgb(72, 66, 66);
+  width: 20px;
+  height: 40px;
+  position: relative;
+  left: 6.7px;
+  bottom: 34px;
+  transform: rotate(27deg);
+  border: 1px solid #000;
+  border-bottom: none;
+}
+
+.cars__bamber {
+  background-color: rgb(72, 111, 72);
+  width: 100px;
+  height: 25px;
+  border-radius: 30px 0px 0px 0px;
+  border: 1px solid #000;
+  /* border-bottom: none; */
+  display: inline-block;
+  margin: 0px 0px -3.6px 0px;
+
+}
+.cars__body {
+  background-color: rgb(72, 111, 72);
+  width: 500px;
+  height: 100px;
+  border-radius: 0px 2px 2px 2px;
+  border: 1px solid #000;
+
+  
+}
+.cars__body::after {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 30px;
+  background-color: red;
+  position: relative;
+  left: 480px;
+}
+.cars__body:hover::after {
+  box-shadow: 5px 0px 10px red;
+}
+
+
+
+.cars__body::before {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: yellow;
+  border-radius: 50% 0% 0% 50%;
+  margin: 20px 0px 0px -15px;
+  z-index: 3;
+}
+
+.cars__body:hover::before {
+  box-shadow: -5px 0px 10px yellow;
+}
+
+.cars__bamberr{
+  width: 70px;
+  height: 20px;
+  background-color: rgb(122, 117, 117);
+  border: 1px solid #000;
+  position: relative;
+  bottom: 30px;
+  right: 7px;
+  border-radius: 10px 0px 0px 10px;
+}
+.cars__coleso-left {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: white;
+  position: relative;
+  left: 58px;
+  bottom: 75px;
+  display: inline-block;
+}
+
+.cars__coleso-left::before {
+  content: "";
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: rgb(141, 135, 135);
+  border: 1px solid #000;
+  position: absolute;
+  left: 5px;
+  top: 5px;
+}
+
+.cars__item-left {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: white;
+  position: relative;
+  left: 10px;
+  top: 10px;
+  display: inline-block;
+  border: 1px solid #000;
+}
+
+.cars__item-left::before {
+  content: "";
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgb(181, 177, 177);
+  border: 1px solid #000;
+  position: absolute;
+  left: 12.8px;
+  top: 12.8px;
+}
+
+.cars__coleso-right {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: white;
+  position: relative;
+  left: 270px;
+  bottom: 75px;
+  display: inline-block;
+
+}
+
+.cars__coleso-right::before {
+  content: "";
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: rgb(141, 135, 135);
+  border: 1px solid #000;
+  position: absolute;
+  left: 5px;
+  top: 5px;
+}
+.cars__item-right {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: white;
+  position: relative;
+  left: 10px;
+  top: 10px;
+  display: inline-block;
+  border: 1px solid #000;
+}
+
+.cars__item-right::before {
+  content: "";
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgb(181, 177, 177);
+  border: 1px solid #000;
+  position: absolute;
+  left: 12.8px;
+  top: 12.8px;
+}
